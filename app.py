@@ -1,9 +1,9 @@
 import os
 
-from flask import Flask, flash, request, redirect, url_for
+from flask import Flask, request
 from werkzeug.utils import secure_filename
 
-import file_utils as f
+from api.util import file_utils as f
 
 UPLOAD_FOLDER = 'uploads'
 PERMITTED_FORMATS = set(['txt'])
